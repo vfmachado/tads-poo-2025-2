@@ -1,0 +1,45 @@
+4 PILARES DE PROGRAMAÇÃO ORIENTADA A OBJETOS
+
+I. ABSTRAÇÃO
+    focar nos detalhes IMPORTANTES do modelo para o contexto do problema;
+    cuidado para evitar possiveis super modelos
+
+II. ENCAPSULAMENTO
+    a ideia em POO é darmos visibilidade e semantica apenas ao que queremos
+    dentro de uma classe normalmente temos atributos (valores) que possivelmente nao queremos dar acesso livre. 
+
+III. HERANÇA
+    permite "herdar" comportamentos
+
+IV. POLIFORMISMO
+    capacidade de um mesmo método ter comportamentos diferentes dependendo do objeto
+
+
+CLASSE
+    É UM MODELO (TEMPLATE) / DEFINIÇÃO DA ABSTRAÇÃO
+
+    ATRIBUTOS
+        - variáveis / características que definem o meu modelo
+    MÉTODOS
+        - ações possíveis do modelo
+
+OBJETO - a instancia de uma classe / aqui temos valores de fato!
+
+
+VISIBILIDADE
+    public   - todos tem acesso
+    private  - somente a propria classe tem acesso
+
+    IDEALMENTE TODOS ATRIBUTOS SAO PRIVADOS
+
+
+CONSTRUTOR - "MÉTODO ESPECIAL"
+    função de inicialização / quando damos um 
+        new AlgumaCoisa();
+                        ^  -> remete a chamada de um método/função?
+    O CONSTRUTOR serve para inicilizar a instancia da classe.
+
+
+THIS
+    REFERENCIA AO PROPRIO OBJETO
+    
