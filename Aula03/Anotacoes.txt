@@ -1,0 +1,32 @@
+corretor-provas/
+│
+├── src/
+│   ├── domain/                # Entidades e regras de negócio
+│   │   ├── models/
+│   │   │   ├── Aluno.java
+│   │   │   ├── Prova.java
+│   │   │   └── Gabarito.java
+│   │   └── services/
+│   │       ├── CorretorDeProvas.java   # compara Prova com Gabarito
+│   │       └── AprovacaoService.java   # gera lista de aprovados dado a lista de provas, nota minima, gabarito
+│   │
+        # NAO VAMOS IMPLEMENTAR POR HORA
+│   ├── infrastructure/        # Persistência, leitura de arquivos, banco de dados
+│   │   ├── repositories/    
+│   │   │   └── AlunoRepository.java
+│   │   └── data/
+│   │       └── conexaoBanco.java
+│   │
+│   ├── application/           # Casos de uso
+│   │   └── GerarListaAprovacao.java
+│   │
+│   └── ui/                    # Interface com o usuário
+│       ├── Main.java          # ponto de entrada
+│       └── cli/               # (ou web, se for interface web)
+│           └── MenuPrincipal.java
+│
+    # NAO VAMOS IMPLEMENTAR POR HORA
+└── test/                      # Testes unitários e de integração
+    ├── ProvaTest.java         
+    ├── GabaritoTest.java
+    └── AprovacaoServiceTest.java
