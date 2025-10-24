@@ -1,4 +1,4 @@
-### Aula 2: Atributos e Métodos; Abstração, Classes e Instâncias
+### Material 04: Atributos e Métodos; Abstração, Classes e Instâncias
 
 ### 1. O que são Atributos e Métodos?
 

@@ -1,5 +1,5 @@
 
-# **02 - Getters e Setters**  
+# **Material 02 - Getters e Setters**  
 
 ## **1. Introdução**  
 ### O que são Getters e Setters?  
