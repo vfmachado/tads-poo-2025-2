@@ -1,6 +1,6 @@
 # TRABALHO II
 
-# ENTREGA E APRESENTACAO DIA XX/10/25
+# ENTREGA E APRESENTACAO DIA 31/10/25
 
 SISTEMA DE UMA CLINICA
 Sistema de agendamentos de consultas médicas.
