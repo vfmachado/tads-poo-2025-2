@@ -11,7 +11,7 @@ import java.awt.event.KeyListener;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-import src.controller.Controle;
+import src.controller.IJogo;
 import src.controller.ControleTeclado;
 
 /*
@@ -25,16 +25,14 @@ public class PainelJogo extends JPanel implements ActionListener {
     private final int FPS = (int) (1000/60);    // 60 frames
 
     private Timer timer;
-    private Controle controle;  // nao é um game pad / isso é a classe que contem a logica do jogo (controller do MVC)
+    private IJogo jogo;  // nao é um game pad / isso é a classe que contem a logica do jogo (controller do MVC)
 
-    public PainelJogo() {
-
-        this.controle = new Controle();
-
+    public PainelJogo(IJogo jogo) {
+        this.jogo  = jogo;
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
         // this.setBackground(Color.BLACK); nao funfou
 
-        this.addKeyListener(new ControleTeclado(controle));;
+        this.addKeyListener(new ControleTeclado(jogo));;
         this.setFocusable(true);
 
         timer = new Timer(FPS, this);
@@ -44,12 +42,12 @@ public class PainelJogo extends JPanel implements ActionListener {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g); // chama o paint component default (limpa a tela)
-        controle.desenhar(g);
+        jogo.desenhar(g);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        controle.atualizar();
+        jogo.atualizar();
         repaint();
     }
 }

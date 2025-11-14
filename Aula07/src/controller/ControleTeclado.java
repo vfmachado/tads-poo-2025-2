@@ -5,9 +5,9 @@ import java.awt.event.KeyListener;
 
 public class ControleTeclado implements KeyListener {
     
-    private Controle controle;
+    private IJogo controle;
 
-    public ControleTeclado(Controle controle) {
+    public ControleTeclado(IJogo controle) {
         this.controle = controle;
     }
     

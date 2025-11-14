@@ -1,5 +1,6 @@
 package src.model;
 
+// ABSTRATA E VISIVEL APENAS NO PACKAGE
 abstract class Posicao {
 
     protected int x;

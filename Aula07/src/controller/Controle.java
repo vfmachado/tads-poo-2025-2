@@ -4,8 +4,10 @@ import java.awt.Graphics;
 
 import src.model.Item;
 import src.model.Player;
+// import src.model.Posicao; // NAO POSSO ACESSAR   
 
-public class Controle {
+// CONTROLE FOI CHAMADO ASSIM POR CONTA DA CAMADA CONTROLLER
+public class Controle implements IJogo {
     
     private Player player;
     private Item item;
@@ -15,7 +17,7 @@ public class Controle {
         this.item = new Item();
     }
 
-
+    @Override
     public void atualizar() {
         this.player.mover();
 
@@ -30,12 +32,13 @@ public class Controle {
         }
     }
 
+    @Override
     public void desenhar(Graphics g) {
         player.desenhar(g);
         item.desenhar(g);
     }
 
-
+    @Override
     public void setDirecao(char c) {
         player.setDirecao(c);
     }

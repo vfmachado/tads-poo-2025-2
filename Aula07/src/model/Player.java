@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 // testar o comportamento do player isoladamente eu consigo!
 public class Player extends Posicao {
-    
+
     private int velocidade;
     private char dir;
     private final int tamanho;
