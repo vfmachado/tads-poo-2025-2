@@ -1,0 +1,9 @@
+package isp;
+
+// INTERFACE QUE TEM  METODOS QUE UM HUMANO DEVE IMPLEMENTAR
+// NO ENTANTO, OS METODOS TEM POUCA RELACAO ENTRE SI
+// SEGREGAR = DIVIDIR EM INTERFACES MENORES
+public interface IHumano {
+    void comer();
+    void trabalhar();
+}
